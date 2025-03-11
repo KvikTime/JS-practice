@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User panel</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body class="body">
+    <!-- Этап 1. Создайте верстку элементов, которые будут статичны (неизменны).  -->
+    <div class="body-container">
+      <section class="students">
+        <nav class="panel">
+          <form class="form">
+            <div class="form__container flex">
+              <h2 class="form__title">Заполните поля, чтобы добавить нового студента</h2>
+              <input class="form__input" id="surname" type="text" name="surname" placeholder="Фамилия">
+              <input class="form__input" id="name" type="text" name="name" placeholder="Имя">
+              <input class="form__input" id="patronymic" type="text" name="patronymic" placeholder="Отчество">
+              <span class="form__span">Дата рождения</span>
+              <input class="form__input" id="birthday" type="date" name="birthday">
+              <span class="form__span">От 2000 года, до сегодняшнего</span>
+              <input class="form__input" id="startStudy" type="number" name="startStudy" placeholder="Год начала обучения">
+              <span class="form__span">Выберите факультет</span>
+                <select class="form__select" id="faculty" name="faculty">
+                  <option class="form__option" disabled selected hidden>Выберите факультет</option>
+                  <option class="form__option" value="Инженерный" >Инженерный</option>
+                  <option class="form__option" value="Химический">Химический</option>
+                  <option class="form__option" value="Педагогический" >Педагогический</option>
+                  <option class="form__option" value="Филологический">Филологический</option>
+                </select>
+            </div>
+            <span class="form__error"></span>
+            <button class="form__button btn-reset" type="submit" disabled>Добавить студента</button>
+          </form>
+
+          <form class="filter">
+            <div class="filter__container flex">
+              <h2 class="filter__title">Отфильтровать по содержимому</h2>
+              <input class="filter__input" id="filter-surname" type="text" name="surname" placeholder="Фамилия">
+              <input class="filter__input" id="filter-name" type="text" name="name" placeholder="Имя">
+              <input class="filter__input" id="filter-patronymic" type="text" name="patronymic" placeholder="Отчество">
+              <input class="filter__input" id="filter-birthday" type="text" name="birthday" placeholder="Дата рождения">
+              <input class="filter__input" id="filter-startStudy" type="text" name="startStudy" placeholder="Год начала обучения">
+              <input class="filter__input" id="filter-faculty" type="text" name="faculty" placeholder="Факультет">
+            </div>
+            <button class="filter__reset btn-reset"  type="reset">Сбросить фильтр</button>
+          </form>
+        </nav>
+
+        <table class="head-tabel">
+          <tr class="head-row">
+            <th class="head-row__cell name">ф.и.о.</th>
+            <th class="head-row__cell faculty">Факультет</th>
+            <th class="head-row__cell birthday">Дата рождения и возраст</th>
+            <th class="head-row__cell start-study">Годы обучения и номер курса</th>
+          </tr>
+        </table>
+
+        <table class="students-table">
+        </table>
+      </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+.btn-reset{
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.flex {
+  display: flex;
+}
+
+.panel{
+  display: flex;
+}
+
+.body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+.body-container{
+  height: 100vh;
+}
+
+.students{
+  padding: 50px 25px 0 25px;
+}
+
+.form,
+.filter{
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 25%;
+}
+
+.form__title,
+.filter__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.form__container,
+.filter__container{
+  flex-direction: column;
+}
+
+.form__input, .filter__input,
+.form__select{
+  margin-bottom: 20px;
+  padding: 8px 10px;
+  border: none;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+
+.form__select{
+  margin-bottom: 45px;
+  cursor: pointer;
+}
+
+.form__button,
+.filter__reset{
+  padding: 12px;
+  border:  2px solid #000;
+  border-radius: 10px;
+}
+
+.form__button:enabled{
+  color:#106444;
+  border-color:  #05412A;
+}
+
+.form__error{
+  bottom: 45px;
+  position: absolute;
+  display: none;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #b80505;
+}
+
+.head-row {
+  cursor: pointer;
+}
+
+.name{
+  text-transform: uppercase;
+}
+
+.form__span{
+  margin-bottom: 2px;
+  font-size: 14px;
+  color: #757575;
+}
+
+.head-tabel,
+.students-table {
+  padding: 20px 50px;
+  width: 100%;
+  color: #fff;
+  border-collapse:collapse;
+  background-color:  #5FB192;
+}
+
+th,td {
+  padding: 10px 5px;
+  font-weight: 100;
+  hyphens: auto;
+  width: calc( 100% / 4);
+}
+
+.head-row{
+  background-color: #05412A;;
+}
+
+.row-student{
+  font-size: 16px;
+}
+
+.cell-students{
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+}
+
+.cell-students:last-child{
+  border-right: 1px solid #000;
+}
+
+.head-row__cell{
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;;
+}
+
+.head-row__cell:last-child{
+  border-right: 1px solid #000;
+}
