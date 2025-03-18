@@ -2,7 +2,7 @@
 const currentYear = 2024
 
 let student = "Илья"
-let year = "2006"
+let year = 2006
 let age = currentYear - year
 
 console.log("Студент:", student);
